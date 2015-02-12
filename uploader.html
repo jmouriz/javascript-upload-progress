@@ -1,0 +1,386 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>uploader demo</title>
+    <script type="text/javascript" src="javascript/common.js"></script>
+    <script type="text/javascript" src="javascript/ajax.js"></script>
+    <script type="text/javascript" src="javascript/uploader.js"></script>
+    <link href="stylesheet/uploader.css" rel="stylesheet" type="text/css" media="screen">
+    <style type="text/css">
+      /* body     { background:url(images/background.png);font-family:sans-serif; } */
+      ul.controls	{ font-family:sans-serif; }
+    </style>
+  </head>
+  <body>
+      
+  	  <!-- WIDGET DE PREVISUALIZACIÓN Y CARGA DE LA IMAGEN -->
+  	  <div id="c0001-widget-1" class="c0001 widget">
+  	    <div id="c0001-content-1" class="c0001 content">
+  	      <!-- THE IMAGE -->
+  	      <img id="c0001-preview-1" class="c0001 preview" src="images/missing.gif" name="c0001-preview-1">
+  	      <!-- THE IMAGE -->
+  	
+  	      <!-- UPLOAD BUTTON -->
+  	      <div class="c0001 holder">
+  	        <form id="c0001-uploader-1" class="c0001 form" enctype="multipart/form-data" action="uploader.php" method="post" name="c0001-uploader-1">
+  	          <input type="hidden" name="id" id="c0001-identity-1">
+  	          <label class="c0001 browse"><input class="c0001 file" id="c0001-file-1" name="file" type="file"></label>
+  	        </form>
+  	      </div>
+  	      <!-- UPLOAD BUTTON -->
+  	    </div>
+  	
+  	    <!-- BUTTONS MICRO-BAR -->
+  	    <div id="c0001-actions-1" class="c0001 actions">
+  	      <div id="c0001-edit-1" class="c0001 button light xx-small"><img src="images/edit.gif"></div>
+  	      <div id="c0001-erase-1" class="c0001 button light xx-small"><img src="images/close.gif"></div>
+  	      <!-- div class="c0001 button light xx-small bussy"><img src="images/micro-loader.gif"></div -->
+  	    </div>
+  	    <!-- BUTTONS MICRO-BAR -->
+  	
+  	    <!-- BOTTOM CONTROLS -->
+  	    <div id="c0001-controls-1" class="c0001 controls">
+  	      <!-- COMBO -->
+  	      <div id="c0001-combo-1" class="c0001 active">
+            <span id="c0001-selected-1" class="c0001 selected">Inactive</span>
+            <img class="c0001 arrow" src="images/arrow.gif">
+          </div>
+  	      <div id="c0001-options-1" class="c0001 options">
+  	        <div id="c0001-set-inactive-1" class="c0001 option">Inactive</div>
+  	        <div id="c0001-set-public-1" class="c0001 option">Public</div>
+  	        <div id="c0001-set-private-1" class="c0001 option">Private</div>
+  	      </div>
+  	      <!-- COMBO -->
+  	
+  	      <div id="c0001-set-default-1" class="c0001 default">Set as profile image</div>
+  	
+  	      <div id="c0001-edit-form-1" class="c0001 edit">
+  	        <textarea id="c0001-comment-1" class="c0001 comment">comment</textarea>
+  	        <div id="c0001-save-1" class="c0001 save">Save</div>
+  	      </div>
+  	    </div>
+  	    <!-- BOTTOM CONTROLS -->
+  	  </div>
+  	
+  	  <script type="text/javascript">
+  	    var widget_1 = new Widget(1, progress_dialog);
+      </script>
+  	  <!-- WIDGET DE PREVISUALIZACIÓN Y CARGA DE LA IMAGEN -->
+  
+      
+  	  <!-- WIDGET DE PREVISUALIZACIÓN Y CARGA DE LA IMAGEN -->
+  	  <div id="c0001-widget-2" class="c0001 widget">
+  	    <div id="c0001-content-2" class="c0001 content">
+  	      <!-- THE IMAGE -->
+  	      <img id="c0001-preview-2" class="c0001 preview" src="images/missing.gif" name="c0001-preview-2">
+  	      <!-- THE IMAGE -->
+  	
+  	      <!-- UPLOAD BUTTON -->
+  	      <div class="c0001 holder">
+  	        <form id="c0001-uploader-2" class="c0001 form" enctype="multipart/form-data" action="uploader.php" method="post" name="c0001-uploader-2">
+  	          <input type="hidden" name="id" id="c0001-identity-2">
+  	          <label class="c0001 browse"><input class="c0001 file" id="c0001-file-2" name="file" type="file"></label>
+  	        </form>
+  	      </div>
+  	      <!-- UPLOAD BUTTON -->
+  	    </div>
+  	
+  	    <!-- BUTTONS MICRO-BAR -->
+  	    <div id="c0001-actions-2" class="c0001 actions">
+  	      <div id="c0001-edit-2" class="c0001 button light xx-small"><img src="images/edit.gif"></div>
+  	      <div id="c0001-erase-2" class="c0001 button light xx-small"><img src="images/close.gif"></div>
+  	      <!-- div class="c0001 button light xx-small bussy"><img src="images/micro-loader.gif"></div -->
+  	    </div>
+  	    <!-- BUTTONS MICRO-BAR -->
+  	
+  	    <!-- BOTTOM CONTROLS -->
+  	    <div id="c0001-controls-2" class="c0001 controls">
+  	      <!-- COMBO -->
+  	      <div id="c0001-combo-2" class="c0001 active">
+             <span id="c0001-selected-2" class="c0001 selected">Inactive</span>
+             <img class="c0001 arrow" src="images/arrow.gif">
+          </div>
+  	      <div id="c0001-options-2" class="c0001 options">
+  	        <div id="c0001-set-inactive-2" class="c0001 option">Inactive</div>
+  	        <div id="c0001-set-public-2" class="c0001 option">Public</div>
+  	        <div id="c0001-set-private-2" class="c0001 option">Private</div>
+  	      </div>
+  	      <!-- COMBO -->
+  	
+  	      <div id="c0001-set-default-2" class="c0001 default">Set as profile image</div>
+  	
+  	      <div id="c0001-edit-form-2" class="c0001 edit">
+  	        <textarea id="c0001-comment-2" class="c0001 comment">comment</textarea>
+  	        <div id="c0001-save-2" class="c0001 save">Save</div>
+  	      </div>
+  	    </div>
+  	    <!-- BOTTOM CONTROLS -->
+  	  </div>
+  	
+  	  <script type="text/javascript">
+  	    var widget_2 = new Widget(2, progress_dialog);
+      </script>
+  	  <!-- WIDGET DE PREVISUALIZACIÓN Y CARGA DE LA IMAGEN -->
+  
+      
+  	  <!-- WIDGET DE PREVISUALIZACIÓN Y CARGA DE LA IMAGEN -->
+  	  <div id="c0001-widget-3" class="c0001 widget">
+  	    <div id="c0001-content-3" class="c0001 content">
+  	      <!-- THE IMAGE -->
+  	      <img id="c0001-preview-3" class="c0001 preview" src="images/missing.gif" name="c0001-preview-3">
+  	      <!-- THE IMAGE -->
+  	
+  	      <!-- UPLOAD BUTTON -->
+  	      <div class="c0001 holder">
+  	        <form id="c0001-uploader-3" class="c0001 form" enctype="multipart/form-data" action="uploader.php" method="post" name="c0001-uploader-3">
+  	          <input type="hidden" name="id" id="c0001-identity-3">
+  	          <label class="c0001 browse"><input class="c0001 file" id="c0001-file-3" name="file" type="file"></label>
+  	        </form>
+  	      </div>
+  	      <!-- UPLOAD BUTTON -->
+  	    </div>
+  	
+  	    <!-- BUTTONS MICRO-BAR -->
+  	    <div id="c0001-actions-3" class="c0001 actions">
+  	      <div id="c0001-edit-3" class="c0001 button light xx-small"><img src="images/edit.gif"></div>
+  	      <div id="c0001-erase-3" class="c0001 button light xx-small"><img src="images/close.gif"></div>
+  	      <!-- div class="c0001 button light xx-small bussy"><img src="images/micro-loader.gif"></div -->
+  	    </div>
+  	    <!-- BUTTONS MICRO-BAR -->
+  	
+  	    <!-- BOTTOM CONTROLS -->
+  	    <div id="c0001-controls-3" class="c0001 controls">
+  	      <!-- COMBO -->
+  	      <div id="c0001-combo-3" class="c0001 active">
+            <span id="c0001-selected-3" class="c0001 selected">Inactive</span>
+            <img class="c0001 arrow" src="images/arrow.gif">
+          </div>
+  	      <div id="c0001-options-3" class="c0001 options">
+  	        <div id="c0001-set-inactive-3" class="c0001 option">Inactive</div>
+  	        <div id="c0001-set-public-3" class="c0001 option">Public</div>
+  	        <div id="c0001-set-private-3" class="c0001 option">Private</div>
+  	      </div>
+  	      <!-- COMBO -->
+  	
+  	      <div id="c0001-set-default-3" class="c0001 default">Set as profile image</div>
+  	
+  	      <div id="c0001-edit-form-3" class="c0001 edit">
+  	        <textarea id="c0001-comment-3" class="c0001 comment">comment</textarea>
+  	        <div id="c0001-save-3" class="c0001 save">Save</div>
+  	      </div>
+  	    </div>
+  	    <!-- BOTTOM CONTROLS -->
+  	  </div>
+  	
+  	  <script type="text/javascript">
+  	    var widget_3 = new Widget(3, progress_dialog);
+   	  </script>
+  	  <!-- WIDGET DE PREVISUALIZACIÓN Y CARGA DE LA IMAGEN -->
+  
+      <div class="c0001 break">&nbsp;</div>  
+
+  	  <!-- WIDGET DE PREVISUALIZACIÓN Y CARGA DE LA IMAGEN -->
+  	  <div id="c0001-widget-4" class="c0001 widget">
+  	    <div id="c0001-content-4" class="c0001 content">
+  	      <!-- THE IMAGE -->
+  	      <img id="c0001-preview-4" class="c0001 preview" src="images/missing.gif" name="c0001-preview-4">
+  	      <!-- THE IMAGE -->
+  	
+  	      <!-- UPLOAD BUTTON -->
+  	      <div class="c0001 holder">
+  	        <form id="c0001-uploader-4" class="c0001 form" enctype="multipart/form-data" action="uploader.php" method="post" name="c0001-uploader-4">
+  	          <input type="hidden" name="id" id="c0001-identity-4">
+  	          <label class="c0001 browse"><input class="c0001 file" id="c0001-file-4" name="file" type="file"></label>
+  	        </form>
+  	      </div>
+  	      <!-- UPLOAD BUTTON -->
+  	    </div>
+  	
+  	    <!-- BUTTONS MICRO-BAR -->
+  	    <div id="c0001-actions-4" class="c0001 actions">
+  	      <div id="c0001-edit-4" class="c0001 button light xx-small"><img src="images/edit.gif"></div>
+  	      <div id="c0001-erase-4" class="c0001 button light xx-small"><img src="images/close.gif"></div>
+  	      <!-- div class="c0001 button light xx-small bussy"><img src="images/micro-loader.gif"></div -->
+  	    </div>
+  	    <!-- BUTTONS MICRO-BAR -->
+  	
+  	    <!-- BOTTOM CONTROLS -->
+  	    <div id="c0001-controls-4" class="c0001 controls">
+  	      <!-- COMBO -->
+  	      <div id="c0001-combo-4" class="c0001 active">
+             <span id="c0001-selected-4" class="c0001 selected">Inactive</span>
+             <img class="c0001 arrow" src="images/arrow.gif">
+          </div>
+  	      <div id="c0001-options-4" class="c0001 options">
+  	        <div id="c0001-set-inactive-4" class="c0001 option">Inactive</div>
+  	        <div id="c0001-set-public-4" class="c0001 option">Public</div>
+  	        <div id="c0001-set-private-4" class="c0001 option">Private</div>
+  	      </div>
+  	      <!-- COMBO -->
+  	
+  	      <div id="c0001-set-default-4" class="c0001 default">Set as profile image</div>
+  	
+  	      <div id="c0001-edit-form-4" class="c0001 edit">
+  	        <textarea id="c0001-comment-4" class="c0001 comment">comment</textarea>
+  	        <div id="c0001-save-4" class="c0001 save">Save</div>
+  	      </div>
+  	    </div>
+  	    <!-- BOTTOM CONTROLS -->
+  	  </div>
+  	
+  	  <script type="text/javascript">
+  	    var widget_4 = new Widget(4, progress_dialog);
+      </script>
+  	  <!-- WIDGET DE PREVISUALIZACIÓN Y CARGA DE LA IMAGEN -->
+  
+  	  <!-- WIDGET DE PREVISUALIZACIÓN Y CARGA DE LA IMAGEN -->
+  	  <div id="c0001-widget-5" class="c0001 widget">
+  	    <div id="c0001-content-5" class="c0001 content">
+  	      <!-- THE IMAGE -->
+  	      <img id="c0001-preview-5" class="c0001 preview" src="images/missing.gif" name="c0001-preview-5">
+  	      <!-- THE IMAGE -->
+  	
+  	      <!-- UPLOAD BUTTON -->
+  	      <div class="c0001 holder">
+  	        <form id="c0001-uploader-5" class="c0001 form" enctype="multipart/form-data" action="uploader.php" method="post" name="c0001-uploader-5">
+  	          <input type="hidden" name="id" id="c0001-identity-5">
+  	          <label class="c0001 browse"><input class="c0001 file" id="c0001-file-5" name="file" type="file"></label>
+  	        </form>
+  	      </div>
+  	      <!-- UPLOAD BUTTON -->
+  	    </div>
+  	
+  	    <!-- BUTTONS MICRO-BAR -->
+  	    <div id="c0001-actions-5" class="c0001 actions">
+  	      <div id="c0001-edit-5" class="c0001 button light xx-small"><img src="images/edit.gif"></div>
+  	      <div id="c0001-erase-5" class="c0001 button light xx-small"><img src="images/close.gif"></div>
+  	      <!-- div class="c0001 button light xx-small bussy"><img src="images/micro-loader.gif"></div -->
+  	    </div>
+  	    <!-- BUTTONS MICRO-BAR -->
+  	
+  	    <!-- BOTTOM CONTROLS -->
+  	    <div id="c0001-controls-5" class="c0001 controls">
+  	      <!-- COMBO -->
+  	      <div id="c0001-combo-5" class="c0001 active">
+             <span id="c0001-selected-5" class="c0001 selected">Inactive</span>
+             <img class="c0001 arrow" src="images/arrow.gif">
+          </div>
+  	      <div id="c0001-options-5" class="c0001 options">
+  	        <div id="c0001-set-inactive-5" class="c0001 option">Inactive</div>
+  	        <div id="c0001-set-public-5" class="c0001 option">Public</div>
+  	        <div id="c0001-set-private-5" class="c0001 option">Private</div>
+  	      </div>
+  	      <!-- COMBO -->
+  	
+  	      <div id="c0001-set-default-5" class="c0001 default">Set as profile image</div>
+  	
+  	      <div id="c0001-edit-form-5" class="c0001 edit">
+  	        <textarea id="c0001-comment-5" class="c0001 comment">comment</textarea>
+  	        <div id="c0001-save-5" class="c0001 save">Save</div>
+  	      </div>
+  	    </div>
+  	    <!-- BOTTOM CONTROLS -->
+  	  </div>
+  	
+  	  <script type="text/javascript">
+  	    var widget_5 = new Widget(5, progress_dialog);
+      </script>
+  	  <!-- WIDGET DE PREVISUALIZACIÓN Y CARGA DE LA IMAGEN -->
+  
+  	  <!-- WIDGET DE PREVISUALIZACIÓN Y CARGA DE LA IMAGEN -->
+  	  <div id="c0001-widget-6" class="c0001 widget">
+  	    <div id="c0001-content-6" class="c0001 content">
+  	      <!-- THE IMAGE -->
+  	      <img id="c0001-preview-6" class="c0001 preview" src="images/missing.gif" name="c0001-preview-6">
+  	      <!-- THE IMAGE -->
+  	
+  	      <!-- UPLOAD BUTTON -->
+  	      <div class="c0001 holder">
+  	        <form id="c0001-uploader-6" class="c0001 form" enctype="multipart/form-data" action="uploader.php" method="post" name="c0001-uploader-6">
+  	          <input type="hidden" name="id" id="c0001-identity-6">
+  	          <label class="c0001 browse"><input class="c0001 file" id="c0001-file-6" name="file" type="file"></label>
+  	        </form>
+  	      </div>
+  	      <!-- UPLOAD BUTTON -->
+  	    </div>
+  	
+  	    <!-- BUTTONS MICRO-BAR -->
+  	    <div id="c0001-actions-6" class="c0001 actions">
+  	      <div id="c0001-edit-6" class="c0001 button light xx-small"><img src="images/edit.gif"></div>
+  	      <div id="c0001-erase-6" class="c0001 button light xx-small"><img src="images/close.gif"></div>
+  	      <!-- div class="c0001 button light xx-small bussy"><img src="images/micro-loader.gif"></div -->
+  	    </div>
+  	    <!-- BUTTONS MICRO-BAR -->
+  	
+  	    <!-- BOTTOM CONTROLS -->
+  	    <div id="c0001-controls-6" class="c0001 controls">
+  	      <!-- COMBO -->
+  	      <div id="c0001-combo-6" class="c0001 active">
+             <span id="c0001-selected-6" class="c0001 selected">Inactive</span>
+             <img class="c0001 arrow" src="images/arrow.gif">
+          </div>
+  	      <div id="c0001-options-6" class="c0001 options">
+  	        <div id="c0001-set-inactive-6" class="c0001 option">Inactive</div>
+  	        <div id="c0001-set-public-6" class="c0001 option">Public</div>
+  	        <div id="c0001-set-private-6" class="c0001 option">Private</div>
+  	      </div>
+  	      <!-- COMBO -->
+  	
+  	      <div id="c0001-set-default-6" class="c0001 default">Set as profile image</div>
+  	
+  	      <div id="c0001-edit-form-6" class="c0001 edit">
+  	        <textarea id="c0001-comment-6" class="c0001 comment">comment</textarea>
+  	        <div id="c0001-save-6" class="c0001 save">Save</div>
+  	      </div>
+  	    </div>
+  	    <!-- BOTTOM CONTROLS -->
+  	  </div>
+  	
+  	  <script type="text/javascript">
+  	    var widget_6 = new Widget(6, progress_dialog);
+      </script>
+  	  <!-- WIDGET DE PREVISUALIZACIÓN Y CARGA DE LA IMAGEN -->
+  
+      <div class="c0001 break">&nbsp;</div>  
+
+    <!-- PROGRESS DIALOG -->
+    <div id="c0001-dialog" class="c0001 dialog">
+      <div class="c0001 title">Uploading progress</div>
+      <!-- PROGRESS BAR -->
+      <div class="c0001 holder c0001 progress" id="c0001-progress"><div id="c0001-bar" class="c0001 bar"></div></div>
+      <!-- PROGRESS BAR -->
+      <div id="c0001-percent" class="c0001 percent">0% completed</div>
+      <div id="c0001-display" class="c0001 display">connecting</div>
+      <button id="c0001-cancel" class="c0001 button">Cancel</button>
+    </div>
+    <!-- PROGRESS DIALOG -->
+
+  	<script type="text/javascript">
+      default_profile = widget_1;
+      widget_1.set_image('03c08ea1f9f712db0b15dcd298b67889a.jpg');
+  	</script>
+  
+    <!--
+    <ul class="controls">
+      <li><a href="#" onclick="location.reload()">reload()</a></li>
+      <li><a href="#" onclick="progress_dialog.show()">show()</a></li>
+      <li><a href="#" onclick="progress_dialog.hide()">hide()</a></li>
+      <li><a href="#" onclick="progress_dialog.reset()">reset()</a></li>
+      <li><a href="#" onclick="progress_dialog.set(25)">set(25)</a></li>
+      <li><a href="#" onclick="progress_dialog.set(50)">set(50)</a></li>
+      <li><a href="#" onclick="progress_dialog.set(75)">set(75)</a></li>
+      <li><a href="#" onclick="progress_dialog.set(100)">set(100)</a></li>
+      <li><a href="#" onclick="progress_dialog.set_style(1)">style = 1</a></li>
+      <li><a href="#" onclick="progress_dialog.set_style(2)">style = 2</a></li>
+      <li><a href="#" onclick="progress_dialog.set_style(3)">style = 3</a></li>
+      <li><a href="#" onclick="progress_dialog.set_style(4)">style = 4</a></li>
+      <li><a href="#" onclick="progress_dialog.set_style(5)">style = 5</a></li>
+      <li><a href="#" onclick="progress_dialog.set_style(6)">style = 6</a></li>
+      <li><a href="#" onclick="progress_dialog.set_style(7)">style = 7</a></li>
+      <li><a href="#" onclick="progress_dialog.set_style(8)">style = 8</a></li>
+      <li><a href="#" onclick="progress_dialog.set_style(9)">style = 9</a></li>
+      <li><a href="#" onclick="progress_dialog.set_style(10)">style = 10</a></li>
+    </ul>
+    -->
+  </body>
+</html>

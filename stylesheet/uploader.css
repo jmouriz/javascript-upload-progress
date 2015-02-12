@@ -1,0 +1,41 @@
+div.c0001.widget         { width:185px;height:280px;float:left;position:relative;font-family:sans-serif;font-size:12px; }
+div.c0001.content        { background:#5b4e3c;border:solid 3px #372d23;height:158px;width:148px;text-align:center;float:left; }
+div.c0001.actions        { position:absolute;top:0px;left:153px;display:none; }
+img.c0001.preview        { margin-top:20px; }
+div.c0001.holder         { text-align:left; }
+form.c0001.form          { margin-top:20px;margin-left:15px;z-index:0; }
+button.c0001.button      { height:26px;background-color:#d60c08;color:white;border:outset 2px #b51821;margin-top:10px; }
+label.c0001.browse       { background:url(../images/button.png);width:116px;height:23px;display:block;overflow:hidden;z-index:0; }
+input.c0001.file         { position:relative;height:100%;width:auto;opacity:0;-moz-opacity:0;
+                           filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);z-index:1; }
+div.c0001.controls       { width:148px;background:#5b4e3c;color:white;border:solid 3px #372d23;visibility:hidden; }
+div.c0001.edit           { text-align:right;margin-left:3px;display:none; }
+textarea.c0001.comment   { border:solid 1px red;border:solid 1px black;width:142px;margin-top:2px;margin-bottom:2px;
+                           margin-right:3px;overflow:auto; }
+div.c0001.save           { background:url(../images/button-background.gif) repeat-x;border:solid 1px black;color:white;margin-top:2px;
+                           margin-bottom:2px;margin-left:3px;cursor:pointer;width:60px;text-align:center; }
+div.c0001.default        { margin-left:5px;margin-right:3px;margin-bottom:3px;padding-left:2px;margin-top:3px;cursor:pointer; }
+div.c0001.default.setted { background:#bb2020; }
+div.c0001.active         { cursor:pointer;border:1px solid black;background:url(../images/button-background.gif) repeat;width:137px;
+                           padding-left:3px;margin-top:6px;margin-left:3px;height:19px; }
+span.c0001.selected      { width:120px;position:absolute;padding-top:2px;text-align:left; }
+img.c0001.arrow          { position:relative;margin-left:120px;padding-top:5px; }
+div.c0001.options        { position:absolute;margin-left:3px;border:solid 1px #372d23;border-top:0px;background:#5b4e3c;width:140px;
+                           z-index:1;display:none; }
+div.c0001.option         { cursor:pointer;padding-left:3px; }
+div.c0001.option:hover   { background:#3a2f27; }
+div.c0001.break          { height:295px;width:0px; }
+div.c0001.dialog         { position:absolute;left:0;top:0;background:black;color:white;height:155px;width:300px;font-family:sans-serif;
+                           font-size:12px;text-align:center;opacity:0;-moz-opacity:0;
+                           filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);z-index:-1; }
+div.c0001.title          { margin-top:15px;font-size:16px;font-weight:bold; }
+div.c0001.progress       { background:url(../images/styles/9.gif) #544837;border:1px solid #3a2f27;height:20px;margin-left:40px;margin-top:5px;
+                           text-align:left;width:220px; }
+div.c0001.bar            { background:url(../images/progress-background.gif) repeat-x;height:100%;width:0px; }
+div.c0001.percent        { margin-top:5px;font-size:14px; }
+div.c0001.display        { margin-top:5px; }
+
+div.c0001.button         { border:solid 1px black;height:18px;padding-top:1px;text-align:center;line-height:18px;font-size:14px;
+                           width:20px;cursor:pointer;color:white;font-family:sans-serif;background:none;padding-top:1px; }
+div.c0001.button.light   { background:#544837; }
+div.c0001.button:hover   { color:black;background:#3a2f27; }
